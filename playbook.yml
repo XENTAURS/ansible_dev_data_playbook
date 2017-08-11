@@ -1,0 +1,17 @@
+- hosts: ElasticSearch
+  user: ansible
+  sudo: yes
+  gather_facts: true
+  roles:
+    - ansible_elasticsearch_role
+    - ansible_filebeat_role
+    - ansible_metricbeat_role
+    - ansible_kibana_role
+
+- hosts: Hadoop
+  user: ansible
+  sudo: yes
+  gather_facts: true
+  roles:
+    - ansible_filebeat_role
+    - ansible_metricbeat_role

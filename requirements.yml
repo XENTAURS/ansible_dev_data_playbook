@@ -1,0 +1,4 @@
+- src: https://github.com/XENTAURS/ansible_elasticsearch_role.git
+  scm: git
+  version: "1.0.1"  # quoted, so YAML doesn't parse this as a floating-point value
+
